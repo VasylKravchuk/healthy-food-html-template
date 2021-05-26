@@ -1,0 +1,72 @@
+*, *:before, *:after
+  box-sizing: border-box
+
+body
+  margin: 0
+  background-color: #1A1A1A
+  background-image: url(../images/main-bg.png)
+  background-repeat: no-repeat
+  background-size: 100% auto
+  background-position: top right
+  font-family: 'Montserrat', sans-serif
+  color: #fff
+  font-size: 13px
+  line-height: normal
+  font-weight: normal
+
+
+ul, p, h1, h2, h3, h4, h5
+  margin: 0
+  padding: 0
+
+.container 
+  max-width: 1140px
+  padding: 0 15px
+  margin: 0 auto
+
+.title
+  position: relative
+  display: flex
+  flex-wrap: wrap
+  align-items: center
+  justify-content: center
+  min-height: 150px
+  text-align: center
+
+  &.no-line
+    &::after
+      content: none
+
+  &::after
+    content: ''
+    position: absolute
+    bottom: 0
+    left: 50%
+    display: block
+    width: 60px
+    height: 2px
+    background-color: #34C759
+    transform: translateX(-50%)
+
+  &-shadow
+    position: absolute
+    top: 50%
+    left: 50%
+    font-size: 80px
+    font-weight: 700
+    line-height: 120px
+    transform: translate(-50%, -50%)
+    z-index: 1
+    color: #303030
+    letter-spacing: 6px
+
+
+  &-main
+    position: relative
+    z-index: 2
+    font-size: 30px
+    line-height: 60px
+    font-weight: 400
+    color: #D9D9D9
+    letter-spacing: 4px
+
